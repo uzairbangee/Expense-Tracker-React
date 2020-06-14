@@ -1,5 +1,5 @@
 import Reducer from './Reducer';
-import React, { useReducer, createContext, Fragment } from 'react';
+import React, { useReducer, createContext } from 'react';
 
 const initialState = {
     transactions : [],

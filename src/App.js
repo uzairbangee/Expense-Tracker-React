@@ -1,12 +1,11 @@
-import React, { Fragment, useContext }  from 'react';
+import React, { Fragment }  from 'react';
 import Tracker from './Components/Tracker/Tracker.component'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-import { GlobalState, AppContext } from './context/Action';
+import { GlobalState } from './context/Action';
 
 function App() {
-  // const {darkmode} = useContext(AppContext);
-  // console.log(AppContext)
+
   return (
     <GlobalState>
       <Fragment>
