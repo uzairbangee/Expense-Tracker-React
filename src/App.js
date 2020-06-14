@@ -1,25 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment, useContext }  from 'react';
+import Tracker from './Components/Tracker/Tracker.component'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'
+import { GlobalState, AppContext } from './context/Action';
 
 function App() {
+  // const {darkmode} = useContext(AppContext);
+  // console.log(AppContext)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GlobalState>
+      <Fragment>
+        <Tracker/>
+      </Fragment>
+    </GlobalState>
   );
 }
 
