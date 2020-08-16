@@ -6,7 +6,6 @@ import {AppContext} from '../../context/Action';
 
 const Header = () => {
     const {dispatch, darkmode} = useContext(AppContext);
-    console.log(darkmode)
     const changeMode = () => {
         dispatch({
             type: "SET_MODE"
@@ -17,9 +16,9 @@ const Header = () => {
         <Fragment>
             <div className="header">
                 <h2 style={darkmode ? {color : 'white'} : {color : 'black'}}>Expense Tracker</h2>
-                    <label class="switch">
+                    <label className="switch">
                         <input type="checkbox" onChange={changeMode}/>
-                        <span class="slider round"></span>
+                        <span className="slider round"></span>
                     </label>
             </div>
             

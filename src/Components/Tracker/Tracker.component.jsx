@@ -11,7 +11,6 @@ import TransactionForm from '../TransactionForm/TransactionForm.component';
 
 const Tracker = () => {
     const {darkmode} = useContext(AppContext);
-    console.log(darkmode)
 
     return (
         <Fragment>
