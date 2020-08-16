@@ -38,7 +38,7 @@ jobs:
       run: npm install -g surge
       
     - name: deploying
-      run: surge ./build bootcamp-2020-expense-tracker-project.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./build https://bootcamp-2020-expense-tracker-project.surge.sh --token ${{secrets.SURGE_TOKEN}}
     
 
     # Runs a single command using the runners shell
